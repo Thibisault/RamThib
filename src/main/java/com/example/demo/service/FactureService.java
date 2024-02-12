@@ -1,13 +1,16 @@
 package com.example.demo.service;
 
 import com.example.demo.dto.FactureDto;
+import com.example.demo.dto.FactureMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.Facture;
 import com.example.demo.repository.FactureRepository;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class FactureService
@@ -15,8 +18,12 @@ public class FactureService
     @Autowired
     FactureRepository factureRepository;
 
-    public List<Facture> getAllFacture(){
-        return factureRepository.findAll();
+    @Autowired
+    FactureMapper factureMapper;
+
+    public List<FactureDto> getAllFactureDtos() {
+        List<Facture> factures = factureRepository.findAll();
+        return factures.stream().map(factureMapper::factureToDto).collect(Collectors.toList());
     }
 
     public Facture getFactureByReference(long reference){
@@ -28,29 +35,17 @@ public class FactureService
     }
 
     public Facture createNewFacture(FactureDto factureDto) {
-        Facture newFacture = new Facture();
-        /*
-        newFacture.setNom(factureDto.getNom()); // Devrait être newFacture.setNom(factureDto.getNom());
-        newFacture.setReference(factureDto.getReference()); // Devrait être newFacture.setReference(factureDto.getReference());
-        newFacture.setMontant(factureDto.getMontant()); // Devrait être newFacture.setMontant(factureDto.getMontant());
-        */
-        return factureRepository.save(newFacture);
+        Facture facture = factureMapper.dtoToFacture(factureDto);
+        return factureRepository.save(facture);
     }
 
 
     public Facture updateFacture(Long id, FactureDto factureDto) {
-        Facture newFacture = factureRepository.findById(id).orElseThrow(null);
-        /*
-        newFacture.setNom(factureDto.getNom());
-        newFacture.setMontant(factureDto.getMontant());
-        newFacture.setReference(factureDto.getReference());
-        newFacture.setDateCreation(factureDto.getDateCreation());
-        newFacture.setDateReglement(factureDto.getDateReglement());
-        newFacture.setPayerOuNon(factureDto.getPayerOuNon());
-        */
-        return factureRepository.save(newFacture);
+        Facture facture = factureRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Facture not found with id " + id));
+        facture = factureMapper.dtoToFacture(factureDto);
+        facture.setId(id);
+        return factureRepository.save(facture);
     }
-
     public void deleteAllFactures() {
         factureRepository.deleteAll();
     }
