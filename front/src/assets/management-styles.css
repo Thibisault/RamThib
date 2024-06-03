@@ -1,0 +1,158 @@
+/* path: src/assets/management-styles.css */
+
+/* Conteneur global pour la navigation et le contenu de gestion */
+.mgmt-global-container {
+  display: flex;
+  flex-direction: column;  /* Organise les enfants verticalement */
+  align-items: center;     /* Centre les enfants horizontalement */
+  min-height: 100vh;       /* Assure que le conteneur prend au moins toute la hauteur de la fenêtre */
+  width: 100%;             /* Prend toute la largeur */
+}
+
+/* Style de la barre de navigation */
+.mgmt-nav {
+  width: 100%;             /* Prend toute la largeur du conteneur parent */
+  background-color: #2c3e50; /* Foncé pour rester dans le thème */
+  color: white;
+  padding: 1rem 0;         /* Espacement vertical */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /* Ombre pour une distinction claire */
+}
+
+.mgmt-nav a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.mgmt-nav a:hover,
+.mgmt-nav a.active {
+  background-color: #1abc9c;  /* Indique visuellement l'élément actif ou au survol */
+}
+
+/* Style du conteneur de gestion */
+.mgmt-container {
+  width: 100%;             /* Utilise la largeur du conteneur parent */
+  max-width: 37.5rem;      /* Largeur maximale pour le contenu */
+  margin-top: 2rem;        /* Espacement au-dessus pour la clarté */
+  padding: 1.25rem;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border-radius: 0.5rem;   /* Arrondit les coins */
+}
+  
+  .mgmt-heading {
+    color: #646cff;
+    font-size: 2rem; /* Auparavant 32px */
+    line-height: 1.1;
+  }
+  
+  .mgmt-search-input {
+    width: 100%;
+    padding: 0.625rem; /* Auparavant 10px / 16 */
+    margin: 0.625rem 0; /* Auparavant 10px / 16 */
+    background-color: #242424;
+    border: 0.125rem solid #555; /* Auparavant 2px / 16 */
+    color: white;
+    border-radius: 0.3125rem; /* Auparavant 5px / 16 */
+    box-sizing: border-box;
+  }
+  
+  .mgmt-divider {
+    border: 0;
+    height: 0.125rem; /* Auparavant 2px */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    margin: 1.25rem 0; /* Auparavant 20px / 16 */
+  }
+  
+  .mgmt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem; /* Auparavant 10px */
+  }
+  
+  .mgmt-input-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem; /* Auparavant 10px */
+  }
+  
+  .mgmt-input {
+    padding: 0.5rem;
+    background-color: #1a1a1a;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  
+  .mgmt-button {
+    padding: 0.625rem 1.25rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .mgmt-button:hover {
+    background-color: #367c39;
+    transform: scale(1.05);
+  }
+  
+  .mgmt-user-list {
+    margin-top: 1.25rem; 
+  }
+  
+  .mgmt-user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem; 
+    background-color: #1a1a1a;
+    margin-bottom: 0.625rem; 
+    border-radius: 0.5rem;
+    color: white;
+  }
+  
+  .mgmt-actions {
+    display: flex;
+    gap: 0.625rem;
+  }
+
+
+.mgmt-form-update {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #424242;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+    border-radius: 0.5rem; 
+  }
+  
+  .mgmt-form-update .mgmt-input {
+    margin-bottom: 0.5rem;
+    background-color: #333;
+    border: 2px solid #555; 
+  }
+  
+  .mgmt-form-update .mgmt-button {
+    margin-top: 0.5rem; 
+    background-color: #5C6BC0;
+  }
+  
+  .mgmt-form-update-cancel {
+    background-color: #e53935; 
+    margin-left: auto;
+  }
+
+.mgmt-form-update .mgmt-button:hover {
+    background-color: #3949AB; 
+}
+
+.mgmt-form-update-cancel:hover {
+    background-color: #D32F2F; 
+}
+
+  
