@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 1000">
+  <g class="c">
+    <path d="M900 300 a400,400 0 1 0 0,400 a450,450 0 1 1 0,-400" stroke="none" fill="#34495e"/>
+    <path d="M750 300 a300,300 0 0 0 -200,-180 a350,320 0 0 1 320,180z" fill="#41b883" stroke="none"/>
+    <path d="M750 700 a300,300 0 0 1 -200,180 a350,320 0 0 0 320,-180z" fill="#41b883" stroke="none"/>
+  </g>
+  <g class="l">
+      <path stroke="none" fill="#34495e" d="M1080 100 v850 l600,-150 l-500,50 v-800z"/>
+      <path fill="#41b883" stroke="none" d="M1200 950 l600,-150 l-150,125z"/>
+
+    </g><g class="i">
+      <path stroke="none" fill="#34495e" d="M1900 100 v775 l100,-100 v-725z"/>
+      <path fill="#41b883" stroke="none" d="M1900 920 l100,-100 l-25,125z"/>
+      
+    </g>
+  <g class="r">
+    <path stroke="none" fill="#34495e" d="M2250 950 v-550 a350,350 0 0 1 600,-250 a320,350 0 0 0 -500,250 v550z"/><path xmlns="http://www.w3.org/2000/svg" stroke="none" fill="#34495e" d="M2250 500 l600,250 l-500,-300 z"/>
+    
+    
+    <path fill="#41b883" stroke="none" d="M2570 560 a600,300 0 0 0 100,-450 a250,183 0 1 1 -100,450z"/><path xmlns="http://www.w3.org/2000/svg" fill="#41b883" stroke="none" d="M2750 950 l-350,-350 l550,250 z"/>
+  </g>
+</svg>

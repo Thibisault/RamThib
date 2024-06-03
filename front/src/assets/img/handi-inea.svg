@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 430">
+    <title>
+        Inea
+    </title>
+    <defs>
+        <clipPath id="_clipPath_jbEvLodEYXW8R1k9WC3AAIqQiuv0nmiM">
+            <rect width="527.266" height="428.757"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#_clipPath_jbEvLodEYXW8R1k9WC3AAIqQiuv0nmiM)">
+        <g>
+            <path d="M 49.26 244.03 L 215.89 135.735 C 242.037 118.742 284.368 118.932 310.361 136.16 L 475.848 245.838 C 501.841 263.065 501.716 290.848 475.569 307.841 L 308.939 416.135 C 282.792 433.129 240.461 432.939 214.468 415.711 L 48.981 306.033 C 22.988 288.806 23.113 261.023 49.26 244.03 Z" style="stroke:none;fill:#3b1e61;stroke-miterlimit:10"/>
+            <defs>
+                <filter id="pcyVfwFMzSewUPR1AfBOfMZysmo5476N" x="-200%" y="-200%" width="400%" height="400%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                    <feGaussianBlur xmlns="http://www.w3.org/2000/svg" in="SourceGraphic" stdDeviation="17.174436251356113"/>
+                    <feOffset xmlns="http://www.w3.org/2000/svg" dx="0" dy="0" result="pf_100_offsetBlur"/>
+                    <feFlood xmlns="http://www.w3.org/2000/svg" flood-color="#000000" flood-opacity="0.65"/>
+                    <feComposite xmlns="http://www.w3.org/2000/svg" in2="pf_100_offsetBlur" operator="in" result="pf_100_dropShadow"/>
+                    <feBlend xmlns="http://www.w3.org/2000/svg" in="SourceGraphic" in2="pf_100_dropShadow" mode="normal"/>
+                </filter>
+            </defs>
+            <g filter="url(#pcyVfwFMzSewUPR1AfBOfMZysmo5476N)">
+                <linearGradient id="_lgradient_3" x1="0.04761872260854849" y1="0.9625034892776114" x2="0.9422909612648105" y2="0.06197360208798475" gradientTransform="matrix(423.266,0,0,120.474,52,246.477)" gradientUnits="userSpaceOnUse">
+                    <stop offset="1.3043478260869565%" stop-opacity="1" style="stop-color:#5b2b9a"/>
+                    <stop offset="97.82608695652173%" stop-opacity="1" style="stop-color:#935ed6"/>
+                </linearGradient>
+                <path d=" M 475.266 246.477 C 475.147 246.558 475.026 246.637 474.904 246.716 L 309.605 354.146 C 283.091 371.378 240.178 371.194 213.837 353.736 L 52 246.477 L 475.266 246.477 L 475.266 246.477 Z " fill="url(#_lgradient_3)"/>
+            </g>
+            <path d="M 49.26 182.473 L 215.89 74.178 C 242.037 57.185 284.368 57.375 310.361 74.603 L 475.848 184.281 C 501.841 201.508 501.716 229.291 475.569 246.284 L 308.939 354.579 C 282.792 371.572 240.461 371.382 214.468 354.154 L 48.981 244.476 C 22.988 227.249 23.113 199.466 49.26 182.473 Z" style="stroke:none;fill:#4f2686;stroke-miterlimit:10"/>
+            <defs>
+                <filter id="VLJieHNdtAln4RBrfvJCwmRpsWdwF4GO" x="-200%" y="-200%" width="400%" height="400%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+                    <feGaussianBlur xmlns="http://www.w3.org/2000/svg" in="SourceGraphic" stdDeviation="17.174436251356113"/>
+                    <feOffset xmlns="http://www.w3.org/2000/svg" dx="0" dy="0" result="pf_100_offsetBlur"/>
+                    <feFlood xmlns="http://www.w3.org/2000/svg" flood-color="#000000" flood-opacity="0.65"/>
+                    <feComposite xmlns="http://www.w3.org/2000/svg" in2="pf_100_offsetBlur" operator="in" result="pf_100_dropShadow"/>
+                    <feBlend xmlns="http://www.w3.org/2000/svg" in="SourceGraphic" in2="pf_100_dropShadow" mode="normal"/>
+                </filter>
+            </defs>
+            <g filter="url(#VLJieHNdtAln4RBrfvJCwmRpsWdwF4GO)">
+                <linearGradient id="_lgradient_4" x1="0.04761872260854849" y1="0.9625034892776114" x2="0.9422909612648105" y2="0.06197360208798475" gradientTransform="matrix(423.266,0,0,120.474,52,184.92)" gradientUnits="userSpaceOnUse">
+                    <stop offset="1.3043478260869565%" stop-opacity="1" style="stop-color:#5b2b9a"/>
+                    <stop offset="97.82608695652173%" stop-opacity="1" style="stop-color:#935ed6"/>
+                </linearGradient>
+                <path d=" M 475.266 184.92 C 475.147 185.001 475.026 185.08 474.904 185.16 L 309.605 292.589 C 283.091 309.821 240.178 309.637 213.837 292.179 L 52 184.92 L 475.266 184.92 L 475.266 184.92 Z " fill="url(#_lgradient_4)"/>
+            </g>
+            <defs>
+                <linearGradient id="_lgradient_5" x1="0.04761872260854849" y1="0.9625034892776114" x2="0.9422909612648105" y2="0.06197360208798475">
+                    <stop offset="1.3043478260869565%" style="stop-color:#5b2b9a"/>
+                    <stop offset="97.82608695652173%" style="stop-color:#935ed6"/>
+                </linearGradient>
+            </defs>
+            <path d="M 49.26 120.916 L 215.89 12.622 C 242.037 -4.372 284.368 -4.181 310.361 13.046 L 475.848 122.724 C 501.841 139.951 501.716 167.734 475.569 184.727 L 308.939 293.022 C 282.792 310.015 240.461 309.825 214.468 292.598 L 48.981 182.919 C 22.988 165.692 23.113 137.91 49.26 120.916 Z" style="stroke:none;fill:url(#_lgradient_5);stroke-miterlimit:10"/>
+            <g fill="rgb(255,255,255)" transform="skewX(60)skewY(-10)scale(0.4 0.22)translate(-200 405.5)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M161.9882813,98.1240234 c24.9628906-2.3046875,44.3574219-23.8110352,44.3574219-48.9658203C206.3457031,22.0830078,184.2626953,0,157.1875,0 s-49.1572266,22.0830078-49.1572266,49.1582031c0,8.2568359,2.3037109,16.7055664,6.1445313,23.8105469l17.515625,246.4667969 l180.3964844,0.0488281l73.9912109,173.3652344l97.1445313-38.0976563l-15.0429688-35.8203125l-54.3662109,19.625 l-71.5908203-165.2802734l-167.7294922,1.1269531l-2.3027344-31.2128906l121.4228516,0.0483398v-46.1831055l-126.0546875-0.0493164 L161.9882813,98.1240234z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M343.4199219,451.5908203 c-30.4472656,60.1875-94.1748047,99.8398438-162.1503906,99.8398438C81.4296875,551.4306641,0,470.0009766,0,370.1611328 c0-70.1005859,42.4853516-135.2436523,105.8818359-164.1210938l4.1025391,53.5375977 c-37.4970703,23.628418-60.6123047,66.262207-60.6123047,110.9506836c0,72.4267578,59.0712891,131.4970703,131.4970703,131.4970703 c66.2617188,0,122.7646484-50.8515625,130.4697266-116.0869141L343.4199219,451.5908203z"/>
+            </g>
+        </g>
+    </g>
+</svg>

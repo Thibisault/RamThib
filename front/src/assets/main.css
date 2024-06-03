@@ -1,0 +1,131 @@
+.text-explication{
+  max-width: 80%;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto; /* Ajuste la hauteur en fonction du contenu */
+    padding: 1vh;
+  }
+
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.984);
+    }
+  }
+  
+  .focus-animation {
+    animation: zoomInOut 0.5s ease forwards;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: center; /* Alignement central horizontal */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    gap: 5vh; /* Marge entre les éléments du formulaire */
+    width: 100%; /* Prend toute la largeur disponible */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column; /* Garde le label au-dessus de l'input */
+    align-items: center; /* Centre les éléments horizontalement */
+  }
+  
+  .form-group label, .form-group input {
+    text-align: center; /* Centrage du texte pour label et input */
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5vh; /* Espacement entre le label et l'input */
+  }
+  
+  .form-group input {
+    padding: 1vh;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-actions-validate-cancel-form {
+    display: flex;
+    justify-content: center; /* Centrage horizontal des boutons */
+    margin-top: 5vh; /* Espacement du haut */
+    width: 100%; /* Assure la pleine largeur pour le centrage */
+  }
+  
+  .validate-button, .cancel-button {
+    font-size: 1.15em; /* Augmente la taille du texte */
+    font-weight: 550;
+
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  .validate-button { /* Notez la correction du nom de classe */
+    background-color: #2e4b61; /* Couleur personnalisée pour le bouton Valider */
+    color: white; /* Texte blanc pour contraste */
+    border: none;
+    margin-left: 10px; /* Espacement entre les boutons */
+    border-radius: 4px; /* Bordures arrondies pour les boutons */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animation douce lors du survol */
+  }
+  
+  .validate-button:hover {
+    background-color: #45a049; /* Assombrissement au survol */
+  }
+  
+  .cancel-button { /* Classe spécifique pour le bouton Annuler */
+    background-color: #2f5a59; /* Couleur personnalisée pour le bouton Annuler */
+    color: white; /* Texte blanc pour contraste */
+    border: none;
+    margin-left: 10px; /* Maintient l'espacement entre les boutons */
+    border-radius: 4px; /* Bordures arrondies pour les boutons */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animation douce lors du survol */
+  }
+  
+  .cancel-button:hover {
+    background-color: #d32f2f; /* Assombrissement au survol */      
+  }
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('@/assets/img/d13.webp'); /* Chemin à ajuster si nécessaire D13 / D18 / D21 / D27 / facture.gif*/ 
+    background-size: cover; 
+    background-position: center; 
+    padding: 5vh;
+    border-radius: 10px; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 80%;
+    position: relative; /* Nécessaire pour le clipping de l'arrière-plan */
+    overflow: hidden; /* Assure que l'arrière-plan reste dans les bordures arrondies */
+  }
+
+  .dark-banner {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75); /* Noir avec opacité ajustée pour une meilleure lisibilité */
+    padding: 3vh;
+    border-radius: 1vh; /* Bordures arrondies */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre légère pour un effet de profondeur */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: space-between; /* Distribue l'espace verticalement */
+  } 

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+
+
+  <linearGradient id="a" x1="-25.342075%" x2="42.816933%" y1="30%" y2="42.862855%">
+    <stop offset="0" stop-color="#648ab1" />
+    <stop offset="1" stop-color="#19232d" />
+  </linearGradient>
+  <linearGradient id="b" x1="25.342075%" x2="42.816933%" y1="30%" y2="72.862855%">
+    <stop offset="0" stop-color="#276b4d" />
+    <stop offset="1" stop-color="#41b883" />
+  </linearGradient>
+  <linearGradient id="c" x1="25.342075%" x2="42.816933%" y1="30%" y2="72.862855%">
+    <stop offset="0" stop-color="#41b883" />
+    <stop offset="1" stop-color="#276b4d" />
+  </linearGradient>
+
+
+
+
+
+  <g class="c">
+    <path d="M900 300 a400,400 0 1 0 0,400 a450,450 0 1 1 0,-400" fill="url(#a)" stroke="none" />
+    <path d="M750 300 a300,300 0 0 0 -200,-180 a350,320 0 0 1 320,180z" fill="url(#b)" stroke="none" />
+    <path d="M750 700 a300,300 0 0 1 -200,180 a350,320 0 0 0 320,-180z" fill="url(#c)" stroke="none" />
+  </g>
+
+</svg>
