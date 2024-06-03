@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.SortedSet;
 import java.util.stream.Collectors;
 
 @Service
@@ -22,41 +21,11 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
 
-
     // Create
     public UserDto createUser(UserDto userDto) {
-        System.out.println("Received UserDto in service: " + userDto);
-
-        if (userDto.getEmail() == null || userDto.getFirstName() == null || userDto.getLastName() == null || userDto.getPassword() == null) {
-            throw new IllegalArgumentException("All fields must be provided and not null");
-        }
-        System.out.println("user dto email: "+userDto.getEmail());
-        System.out.println("user dto password: "+userDto.getPassword());
-        System.out.println("user dto first name: "+userDto.getFirstName());
-        System.out.println("user dto last name: "+userDto.getLastName());
-
-
-        User user = new User();
-        user.setEmail(userDto.getEmail());
-        System.out.println("user email: "+user.getEmail());
-        user.setFirstName(userDto.getFirstName());
-        System.out.println("user first name: "+user.getFirstName());
-        user.setLastName(userDto.getLastName());
-        System.out.println("user last name: "+user.getLastName());
-        user.setPassword(userDto.getPassword());
-        System.out.println("user password: "+user.getPassword());
-
-
-        //User user = userMapper.userDtoToUser(userDto);
-        System.out.println("Mapped User from UserDto: " + user);
-
+        User user = userMapper.userDtoToUser(userDto);
         User savedUser = userRepository.save(user);
-        System.out.println("Saved User in DB: " + savedUser);
-
-        UserDto savedUserDto = userMapper.userToUserDto(savedUser);
-        System.out.println("Mapped Saved UserDto: " + savedUserDto);
-
-        return savedUserDto;
+        return userMapper.userToUserDto(savedUser);
     }
 
     // Read
@@ -68,6 +37,18 @@ public class UserService {
     public List<UserDto> getAllUsers() {
         List<User> users = userRepository.findAll();
         return users.stream().map(userMapper::userToUserDto).collect(Collectors.toList());
+    }
+
+    // Read by first name
+    public Optional<UserDto> getUserByFirstName(String firstName) {
+        Optional<User> user = userRepository.findByFirstName(firstName);
+        return user.map(userMapper::userToUserDto);
+    }
+
+    // Read by email
+    public Optional<UserDto> getUserByEmail(String email) {
+        Optional<User> user = userRepository.findByEmail(email);
+        return user.map(userMapper::userToUserDto);
     }
 
     // Update

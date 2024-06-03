@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -24,11 +25,8 @@ public class FactureService {
     // Create
     public FactureDto createFacture(FactureDto factureDto) {
         Facture facture = factureMapper.factureDtoToFacture(factureDto);
-        System.out.println("Before save: " + facture.toString());  // Assurez-vous que votre classe Facture a une méthode toString bien définie
         Facture savedFacture = factureRepository.save(facture);
-        System.out.println("After save: " + savedFacture.toString());  // Idem pour Facture
         FactureDto resultDto = factureMapper.factureToFactureDto(savedFacture);
-        System.out.println("Result DTO: " + resultDto.toString());  // Idem pour FactureDto
         return resultDto;
     }
 
@@ -41,6 +39,19 @@ public class FactureService {
     public List<FactureDto> getAllFactures() {
         List<Facture> factures = factureRepository.findAll();
         return factures.stream().map(factureMapper::factureToFactureDto).collect(Collectors.toList());
+    }
+
+    public Optional<FactureDto> getFactureByReferenceFacture(String referenceFacture) {
+        System.out.println("Je suis dans le getFactureByReferenceFacture : "+referenceFacture);
+        Optional<Facture> facture = factureRepository.findByReferenceFacture(referenceFacture);
+        return facture.map(factureMapper::factureToFactureDto);
+    }
+
+    // permet de verifier si le montant de la facture est le meme que celui de la factureDto
+    public Boolean matcheReferenceFactureAndMontant(FactureDto factureDto, Double montantFacture){
+        System.out.println("Je suis dans le matcheReferenceFactureAndMontant : "+factureDto.getMontantFacture());
+        System.out.println("Je suis dans le matcheReferenceFactureAndMontant : "+montantFacture);
+        return Objects.equals(factureDto.getMontantFacture(), montantFacture);
     }
 
     // Update

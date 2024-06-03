@@ -1,0 +1,36 @@
+2024-05-27 15:48:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COLLECTIVITE" non trouvée
+Table "COLLECTIVITE" not found; SQL statement:
+select collectivi0_.id as id1_0_, collectivi0_.code_collectivite as code_col2_0_, collectivi0_.nom_collectivite as nom_coll3_0_ from collectivite collectivi0_ [42102-200]
+2024-05-27 15:49:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COLLECTIVITE" non trouvée
+Table "COLLECTIVITE" not found; SQL statement:
+insert into collectivite (id, code_collectivite, nom_collectivite) values (null, ?, ?) [42102-200]
+2024-05-27 15:49:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COLLECTIVITE" non trouvée
+Table "COLLECTIVITE" not found; SQL statement:
+insert into collectivite (id, code_collectivite, nom_collectivite) values (null, ?, ?) [42102-200]
+2024-05-27 15:49:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COLLECTIVITE" non trouvée
+Table "COLLECTIVITE" not found; SQL statement:
+insert into collectivite (id, code_collectivite, nom_collectivite) values (null, ?, ?) [42102-200]
+2024-05-27 15:49:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FACTURE" non trouvée
+Table "FACTURE" not found; SQL statement:
+select facture0_.id as id1_1_, facture0_.montant_facture as montant_2_1_, facture0_.reference_facture as referenc3_1_, facture0_.type_facture as type_fac4_1_ from facture facture0_ [42102-200]
+2024-05-27 15:49:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FACTURE" non trouvée
+Table "FACTURE" not found; SQL statement:
+insert into facture (id, montant_facture, reference_facture, type_facture) values (null, ?, ?, ?) [42102-200]
+2024-05-27 15:50:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FACTURE" non trouvée
+Table "FACTURE" not found; SQL statement:
+select facture0_.id as id1_1_, facture0_.montant_facture as montant_2_1_, facture0_.reference_facture as referenc3_1_, facture0_.type_facture as type_fac4_1_ from facture facture0_ [42102-200]
+2024-05-27 15:51:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COLLECTIVITE" non trouvée
+Table "COLLECTIVITE" not found; SQL statement:
+select collectivi0_.id as id1_0_, collectivi0_.code_collectivite as code_col2_0_, collectivi0_.nom_collectivite as nom_coll3_0_ from collectivite collectivi0_ [42102-200]
+2024-05-27 15:51:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COLLECTIVITE" non trouvée
+Table "COLLECTIVITE" not found; SQL statement:
+insert into collectivite (id, code_collectivite, nom_collectivite) values (null, ?, ?) [42102-200]

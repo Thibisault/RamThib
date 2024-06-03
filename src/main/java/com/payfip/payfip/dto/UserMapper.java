@@ -18,6 +18,7 @@ public interface UserMapper {
     @Mapping(target = "firstName", source = "firstName")
     @Mapping(target = "lastName", source = "lastName")
     @Mapping(target = "password", source = "password")
+    @Mapping(target = "numeroFiscal", source = "numeroFiscal")
     UserDto userToUserDto(User user);
 
     @Mapping(target = "id", source = "id")
@@ -25,6 +26,7 @@ public interface UserMapper {
     @Mapping(target = "firstName", source = "firstName")
     @Mapping(target = "lastName", source = "lastName")
     @Mapping(target = "password", source = "password")
+    @Mapping(target = "numeroFiscal", source = "numeroFiscal")
     User userDtoToUser(UserDto userDto);
 
     List<UserDto> usersToUserDtos(List<User> users);

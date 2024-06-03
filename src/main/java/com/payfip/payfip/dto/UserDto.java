@@ -27,6 +27,8 @@ public class UserDto {
     @NotBlank
     private String password;
 
+    private String numeroFiscal;
+
     // Getters and Setters
 
     public Long getId() {
@@ -69,6 +71,14 @@ public class UserDto {
         this.password = password;
     }
 
+    public String getNumeroFiscal() {
+        return numeroFiscal;
+    }
+
+    public void setNumeroFiscal(String numeroFiscal) {
+        this.numeroFiscal = numeroFiscal;
+    }
+
     @Override
     public String toString() {
         return "UserDto{" +
@@ -77,6 +87,7 @@ public class UserDto {
                 ", lastName='" + lastName + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", password='" + password + '\'' +
+                ", numeroFiscal='" + numeroFiscal + '\'' +
                 '}';
     }
 }

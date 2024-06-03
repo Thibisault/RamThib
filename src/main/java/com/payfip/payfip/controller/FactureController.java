@@ -45,7 +45,6 @@ public class FactureController {
         return ResponseEntity.ok(factureDtos);
     }
 
-
     // Update
     @PutMapping("/{id}")
     public ResponseEntity<FactureDto> updateFacture(@PathVariable Long id, @RequestBody FactureDto factureDto) {
@@ -58,5 +57,16 @@ public class FactureController {
     public ResponseEntity<Void> deleteFacture(@PathVariable Long id) {
         factureService.deleteFacture(id);
         return ResponseEntity.ok().build();
+    }
+
+    // Check by reference and amount
+    @GetMapping("/checkReferenceFacture")
+    public ResponseEntity<Boolean> checkReferenceFactureAndMontant(@RequestParam String referenceFacture, @RequestParam Double montantFacture) {
+        System.out.println("Je suis dans le controller facture checkReferenceFacture : " + referenceFacture);
+        System.out.println("Montant facture : " + montantFacture);
+        FactureDto factureDto = factureService.getFactureByReferenceFacture(referenceFacture).orElseThrow(() -> new RuntimeException("Facture not found"));
+        boolean matches = factureService.matcheReferenceFactureAndMontant(factureDto, montantFacture);
+        System.out.println("Le boolean est : " + matches);
+        return ResponseEntity.ok(matches);
     }
 }
